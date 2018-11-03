@@ -14,7 +14,6 @@ Those methods above are also applied to gradients to identify inconsistent data 
 ### Usage:
 `DescriptiveStatistics` works on series. Outputs are a csv file with summary and
 a pdf file containing 6 plots:
-different plots:
 * Descriptive statistics as text,
 * a histogram,
 * a boxplot,
@@ -22,4 +21,4 @@ different plots:
 * a lineplot of gradients with outlier thresholds,
 * and a scatterplot of clean data.
 
-Please refer to `DescriptiveStatistics_example.py` for usage details and examples.
+Please refer to `DescriptiveStatistics_example.py` for usage details and examples, and sample pdf files for plots.
