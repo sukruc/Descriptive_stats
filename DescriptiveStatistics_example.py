@@ -13,7 +13,7 @@ x2 = np.random.randn(200)
 # Add some disortion:
 def distorter(x,window_len,mu,sigma):
     for i in range(len(x)-window_len):
-        x[i:i+window_len] = x[i:i+window_len]*np.random.normal(8,4,window_len)
+        x[i:i+window_len] = x[i:i+window_len]*np.random.normal(mu,sigma,window_len)
     return x
 
 # Create a DataFrame
