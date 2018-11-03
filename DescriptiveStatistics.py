@@ -218,7 +218,7 @@ class DescriptiveStatistics:
         #plt.show()
         plt.savefig(fname, dpi=self.dpi, format=self.format)
         plt.close()
-        return(df)
+        return(df) #returns descriptive stats table and clean data
 
     def main(self,DF, prefix='stat_model3'):
         df_ds = pd.DataFrame()
