@@ -17,9 +17,13 @@ def distorter(x,window_len,mu,sigma):
     return x
 
 # Create a DataFrame
-x1 = distorter(x1,3,2,5)
-x2 = distorter(x2,4,1,3)
-df = pd.DataFrame({'x1':x1,'x2':x2})
+y1 = np.cumsum(x1)
+y2 = np.cumsum(x2)
+x1 = distorter(x1,1,3,5)
+x2 = distorter(x2,2,5,3)
+
+
+df = pd.DataFrame({'x1':x1+y1,'x2':x2+y2})
 
 ds = DescriptiveStatistics()
 
