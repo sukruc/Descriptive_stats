@@ -16,7 +16,7 @@ def distorter(x,window_len,mu,sigma):
         x[i:i+window_len] = x[i:i+window_len]*np.random.normal(8,4,window_len)
     return x
 
-# Create a dataframe
+# Create a DataFrame
 x1 = distorter(x1,3,2,5)
 x2 = distorter(x2,4,1,3)
 df = pd.DataFrame({'x1':x1,'x2':x2})
